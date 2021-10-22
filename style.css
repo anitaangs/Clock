@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,200&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway";
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.clock {
+        width: 35rem;
+        height: 35rem;
+        background-color: #ffffff;
+    border-radius: 50%;
+    border: .5rem solid #224B6D;
+    box-shadow: 0.5rem 0.5rem 1rem #CFE8EF, -0.5rem -0.5rem 1rem #CFE8EF;
+    position: relative;
+}
+
+.numbers {
+    width: inherit;
+    height: inherit;
+    position: relative;
+  }
+
+.numbers div {
+    position: absolute;
+    font-size: 2.5rem;
+    color: #224B6D;
+    text-shadow: 0.2rem 0.2rem 0.2rem #CFE8EF;
+}
+
+.twelve {
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.three {
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.six {
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.nine {
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrows {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.arrows::before {
+    content: "";
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #224B6D;
+    border-radius: 50%;
+    box-shadow: 0.2rem 0.2rem 0.5rem #CFE8EF;
+    z-index: 10;
+}
+
+.arrows div {
+    width: 0.7rem;
+    height: 12rem;
+    background-color: #AED1E6;
+    position: absolute;
+    bottom: 50%;
+    box-shadow: 0.2rem 0.2rem 0.5rem #CFE8EF;
+    border-radius: 100% 100% 0 0;
+    transform-origin: bottom center;
+}
+
+.arrows .hour {
+    height: 10rem;
+    transform: rotate(90deg);
+  }
+
+.arrows .second {
+   background-color: #FFDC5E;
+    transform: rotate(270deg);
+
+}
